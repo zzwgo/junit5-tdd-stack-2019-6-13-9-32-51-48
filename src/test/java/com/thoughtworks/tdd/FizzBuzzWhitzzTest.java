@@ -17,4 +17,8 @@ class FizzBuzzWhitzzTest {
     public void shouldReturnBuzzWhenCallNumberGiven5(){
         assertEquals("Buzz",FizzBuzzWhitzz.number(5));
     }
+    @Test
+    public void shouldReturnWhizzWhenCallNumberGiven7(){
+        assertEquals("Whizz",FizzBuzzWhitzz.number(7));
+    }
 }
