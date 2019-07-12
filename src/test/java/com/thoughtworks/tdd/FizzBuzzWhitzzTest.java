@@ -10,6 +10,10 @@ class FizzBuzzWhitzzTest {
         assertEquals("2",FizzBuzzWhitzz.number(2));
     }
     @Test
+    public void shouldReturnFizzWhenCallNumberGiven3(){
+        assertEquals("Fizz",FizzBuzzWhitzz.number(3));
+    }
+    @Test
     public void shouldReturnBuzzWhenCallNumberGiven5(){
         assertEquals("Buzz",FizzBuzzWhitzz.number(5));
     }
