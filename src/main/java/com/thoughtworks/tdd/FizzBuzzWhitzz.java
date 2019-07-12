@@ -3,15 +3,22 @@ package com.thoughtworks.tdd;
 public class FizzBuzzWhitzz {
 
     public static String number(int i){
+        String result="";
         if(i%3==0){
-            return "Fizz";
+            result= "Fizz";
         }
         if(i%5==0){
-            return "Buzz";
+            result= "Buzz";
         }
         if(i%7==0){
-            return "Whizz";
+            result= "Whizz";
         }
-        return  i+"";
+        if(i%3==0&&i%5==0){
+            result= "FizzBuzz";
+        }
+        if(result.isEmpty()){
+            result= ""+i;
+        }
+        return  result;
     }
 }
