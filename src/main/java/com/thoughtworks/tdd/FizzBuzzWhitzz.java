@@ -19,6 +19,9 @@ public class FizzBuzzWhitzz {
         if(i%3==0&&i%7==0){
             result= "FizzWhizz";
         }
+        if(i%5==0&&i%7==0){
+            result= "BuzzWhizz";
+        }
         if(result.isEmpty()){
             result= ""+i;
         }
